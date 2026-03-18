@@ -12,9 +12,6 @@ refind-uefi-boo/
 ├── clover/
 │   ├── bios/         # Clover para BIOS/Legacy (boot7)
 │   └── uefi/         # Clover para UEFI (CLOVERX64.efi)
-├── limine/
-│   ├── bios/         # Limine para BIOS/Legacy
-│   └── uefi/         # Limine para UEFI (BOOTX64.EFI)
 ├── scripts/          # Scripts para detecção e instalação
 └── README.md
 ```
@@ -35,13 +32,6 @@ refind-uefi-boo/
 | `CLOVERX64.efi` | Bootloader UEFI (para /EFI/BOOT/BOOTX64.EFI) |
 | `BOOTX64.efi` | Cópia do Clover para boot UEFI |
 | `boot7` | Bootloader BIOS/Legacy (para MBR) |
-
-### Limine
-| Arquivo | Uso |
-|---------|-----|
-| `BOOTX64.EFI` | Bootloader UEFI (para /EFI/BOOT/BOOTX64.EFI) |
-| `limine-bios.sys` | Bootloader BIOS/Legacy (para MBR) |
-| `limine-bios-hdd.bin` | Imagem BIOS para HD |
 
 ---
 
@@ -184,31 +174,6 @@ install_clover_bios() {
     echo "Clover BIOS instalado em $target_disk"
 }
 
-install_limine_uefi() {
-    local esp_mount="$1"
-    echo -e "${GREEN}Instalando Limine para UEFI...${NC}"
-    
-    # Copiar Limine para partição ESP
-    mkdir -p "$esp_mount/EFI/BOOT"
-    cp limine/uefi/BOOTX64.EFI "$esp_mount/EFI/BOOT/"
-    
-    # Copiar arquivos limine
-    cp limine/bios/limine-bios.sys "$esp_mount/limine-bios.sys"
-    cp limine/bios/limine-bios-hdd.bin "$esp_mount/limine-bios-hdd.bin"
-    
-    echo "Limine UEFI instalado em $esp_mount/EFI/BOOT/"
-}
-
-install_limine_bios() {
-    local target_disk="$1"
-    echo -e "${GREEN}Instalando Limine para BIOS/Legacy...${NC}"
-    
-    # Instalar no MBR
-    dd if=limine/bios/limine-bios.sys of="$target_disk" bs=440 count=1 conv=notrunc
-    
-    echo "Limine BIOS instalado em $target_disk"
-}
-
 # Main
 BOOT_TYPE=$(detect_boot_type)
 echo -e "${YELLOW}Tipo de boot detectado: $BOOT_TYPE${NC}"
@@ -218,8 +183,6 @@ echo -e "${YELLOW}Tipo de boot detectado: $BOOT_TYPE${NC}"
 # install_grub_bios "/dev/sda"
 # install_clover_uefi "/boot/efi"
 # install_clover_bios "/dev/sda"
-# install_limine_uefi "/boot/efi"
-# install_limine_bios "/dev/sda"
 ```
 
 ---
