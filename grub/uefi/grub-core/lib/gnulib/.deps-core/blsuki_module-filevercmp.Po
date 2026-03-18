@@ -1,0 +1,30 @@
+lib/gnulib/blsuki_module-filevercmp.o: lib/gnulib/filevercmp.c \
+ ../config.h lib/gnulib/filevercmp.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
+ ../grub-core/lib/posix_wrap/c-ctype.h ../include/grub/misc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+ ../include/grub/types.h ../include/grub/cpu/types.h \
+ ../include/grub/symbol.h ../include/grub/err.h \
+ ../include/grub/compiler.h ../include/grub/i18n.h \
+ ../grub-core/lib/posix_wrap/limits.h ../grub-core/lib/gnulib/idx.h \
+ ../grub-core/lib/posix_wrap/stdint.h \
+ ../grub-core/lib/posix_wrap/sys/types.h ../grub-core/lib/gnulib/verify.h
+../config.h:
+lib/gnulib/filevercmp.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
+../grub-core/lib/posix_wrap/c-ctype.h:
+../include/grub/misc.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+../include/grub/types.h:
+../include/grub/cpu/types.h:
+../include/grub/symbol.h:
+../include/grub/err.h:
+../include/grub/compiler.h:
+../include/grub/i18n.h:
+../grub-core/lib/posix_wrap/limits.h:
+../grub-core/lib/gnulib/idx.h:
+../grub-core/lib/posix_wrap/stdint.h:
+../grub-core/lib/posix_wrap/sys/types.h:
+../grub-core/lib/gnulib/verify.h:

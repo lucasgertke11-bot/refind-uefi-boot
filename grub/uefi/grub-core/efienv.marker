@@ -1,0 +1,5 @@
+COMMAND_LOCKDOWN_LIST_MARKER(const char *name, grub_command_func_t func, const char *summary, const char *description)
+COMMAND_LIST_MARKER(const char *name, grub_command_func_t func, const char *summary, const char *description)
+P1COMMAND_LIST_MARKER(const char *name, grub_command_func_t func, const char *summary, const char *description)
+  export_cmd = COMMAND_LIST_MARKER("efi-export-env", grub_efi_export_env, "VARIABLE_NAME", "Export environment variable to UEFI.")
+  loadenv_cmd = COMMAND_LIST_MARKER("efi-load-env", grub_efi_load_env, ((void *) 0), "Load the grub environment from UEFI.")

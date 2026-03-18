@@ -1,0 +1,49 @@
+loader/efi/chain_module-chainloader.o: loader/efi/chainloader.c \
+ ../include/grub/loader.h ../include/grub/file.h ../include/grub/types.h \
+ ../config.h /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
+ ../include/grub/cpu/types.h ../include/grub/err.h \
+ ../include/grub/symbol.h ../include/grub/compiler.h \
+ ../include/grub/device.h ../include/grub/fs.h ../include/grub/dl.h \
+ ../include/grub/elf.h ../include/grub/list.h ../include/grub/misc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h ../include/grub/i18n.h \
+ ../include/grub/mm.h ../include/grub/disk.h ../include/grub/loopback.h \
+ ../include/grub/charset.h ../include/grub/efi/api.h \
+ ../include/grub/efi/efi.h ../include/grub/efi/pe32.h \
+ ../include/grub/efi/memory.h ../include/grub/efi/disk.h \
+ ../include/grub/efi/sb.h ../include/grub/efi/linux.h \
+ ../include/grub/command.h ../include/grub/net.h \
+ ../include/grub/net/netbuff.h ../include/grub/macho.h \
+ ../include/grub/i386/macho.h
+../include/grub/loader.h:
+../include/grub/file.h:
+../include/grub/types.h:
+../config.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
+../include/grub/cpu/types.h:
+../include/grub/err.h:
+../include/grub/symbol.h:
+../include/grub/compiler.h:
+../include/grub/device.h:
+../include/grub/fs.h:
+../include/grub/dl.h:
+../include/grub/elf.h:
+../include/grub/list.h:
+../include/grub/misc.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+../include/grub/i18n.h:
+../include/grub/mm.h:
+../include/grub/disk.h:
+../include/grub/loopback.h:
+../include/grub/charset.h:
+../include/grub/efi/api.h:
+../include/grub/efi/efi.h:
+../include/grub/efi/pe32.h:
+../include/grub/efi/memory.h:
+../include/grub/efi/disk.h:
+../include/grub/efi/sb.h:
+../include/grub/efi/linux.h:
+../include/grub/command.h:
+../include/grub/net.h:
+../include/grub/net/netbuff.h:
+../include/grub/macho.h:
+../include/grub/i386/macho.h:

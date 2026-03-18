@@ -1,0 +1,51 @@
+lib/libtasn1/lib/asn1_module-element.o: lib/libtasn1/lib/element.c \
+ lib/libtasn1/lib/int.h ../config.h ../grub-core/lib/posix_wrap/string.h \
+ ../include/grub/misc.h /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+ ../include/grub/types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
+ ../include/grub/cpu/types.h ../include/grub/symbol.h \
+ ../include/grub/err.h ../include/grub/compiler.h ../include/grub/i18n.h \
+ ../grub-core/lib/posix_wrap/sys/types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ ../grub-core/lib/posix_wrap/stdlib.h ../include/grub/mm.h \
+ ../include/grub/safemath.h ../grub-core/lib/posix_wrap/stdio.h \
+ ../include/grub/file.h ../include/grub/device.h ../include/grub/fs.h \
+ ../include/grub/dl.h ../include/grub/elf.h ../include/grub/list.h \
+ ../include/grub/disk.h ../grub-core/lib/posix_wrap/stdint.h \
+ ../include/grub/libtasn1.h ../include/grub/time.h \
+ ../include/grub/cpu/time.h lib/libtasn1/lib/parser_aux.h \
+ lib/libtasn1/lib/gstr.h lib/libtasn1/lib/structure.h \
+ lib/libtasn1/lib/element.h
+lib/libtasn1/lib/int.h:
+../config.h:
+../grub-core/lib/posix_wrap/string.h:
+../include/grub/misc.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+../include/grub/types.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
+../include/grub/cpu/types.h:
+../include/grub/symbol.h:
+../include/grub/err.h:
+../include/grub/compiler.h:
+../include/grub/i18n.h:
+../grub-core/lib/posix_wrap/sys/types.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+../grub-core/lib/posix_wrap/stdlib.h:
+../include/grub/mm.h:
+../include/grub/safemath.h:
+../grub-core/lib/posix_wrap/stdio.h:
+../include/grub/file.h:
+../include/grub/device.h:
+../include/grub/fs.h:
+../include/grub/dl.h:
+../include/grub/elf.h:
+../include/grub/list.h:
+../include/grub/disk.h:
+../grub-core/lib/posix_wrap/stdint.h:
+../include/grub/libtasn1.h:
+../include/grub/time.h:
+../include/grub/cpu/time.h:
+lib/libtasn1/lib/parser_aux.h:
+lib/libtasn1/lib/gstr.h:
+lib/libtasn1/lib/structure.h:
+lib/libtasn1/lib/element.h:

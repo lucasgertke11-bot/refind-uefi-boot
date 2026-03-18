@@ -1,0 +1,37 @@
+term/efi/kernel_exec-console.o: term/efi/console.c ../include/grub/term.h \
+ ../include/grub/err.h ../include/grub/symbol.h ../config.h \
+ ../include/grub/compiler.h ../include/grub/types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
+ ../include/grub/cpu/types.h ../include/grub/unicode.h \
+ ../include/grub/mm.h ../include/grub/misc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h ../include/grub/i18n.h \
+ ../include/grub/list.h ../include/grub/efi/efi.h \
+ ../include/grub/efi/pe32.h ../include/grub/efi/memory.h \
+ ../include/grub/dl.h ../include/grub/elf.h ../include/grub/efi/api.h \
+ ../include/grub/file.h ../include/grub/device.h ../include/grub/fs.h \
+ ../include/grub/disk.h ../include/grub/efi/console.h
+../include/grub/term.h:
+../include/grub/err.h:
+../include/grub/symbol.h:
+../config.h:
+../include/grub/compiler.h:
+../include/grub/types.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
+../include/grub/cpu/types.h:
+../include/grub/unicode.h:
+../include/grub/mm.h:
+../include/grub/misc.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+../include/grub/i18n.h:
+../include/grub/list.h:
+../include/grub/efi/efi.h:
+../include/grub/efi/pe32.h:
+../include/grub/efi/memory.h:
+../include/grub/dl.h:
+../include/grub/elf.h:
+../include/grub/efi/api.h:
+../include/grub/file.h:
+../include/grub/device.h:
+../include/grub/fs.h:
+../include/grub/disk.h:
+../include/grub/efi/console.h:

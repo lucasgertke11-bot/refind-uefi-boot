@@ -1,0 +1,10 @@
+COMMAND_LOCKDOWN_LIST_MARKER(const char *name, grub_command_func_t func, const char *summary, const char *description)
+COMMAND_LIST_MARKER(const char *name, grub_command_func_t func, const char *summary, const char *description)
+P1COMMAND_LIST_MARKER(const char *name, grub_command_func_t func, const char *summary, const char *description)
+grub_extcmd_t EXTCOMMAND_LIST_MARKER(const char *name, grub_extcmd_func_t func, grub_command_flags_t flags, const char *summary, const char *description, const struct grub_arg_option *parser)
+grub_extcmd_t EXTCOMMAND_LOCKDOWN_LIST_MARKER(const char *name, grub_extcmd_func_t func, grub_command_flags_t flags, const char *summary, const char *description, const struct grub_arg_option *parser)
+  FS_LIST_MARKER (&grub_btrfs_fs);
+  cmd_info = COMMAND_LIST_MARKER("btrfs-info", grub_cmd_btrfs_info, "DEVICE", "Print BtrFS info about DEVICE.")
+  cmd_mount_subvol = COMMAND_LIST_MARKER("btrfs-mount-subvol", grub_cmd_btrfs_mount_subvol, "DEVICE DIRECTORY SUBVOL", "Set btrfs DEVICE the DIRECTORY a mountpoint of SUBVOL.")
+  cmd_list_subvols = EXTCOMMAND_LIST_MARKER("btrfs-list-subvols", grub_cmd_btrfs_list_subvols, 0, "[-p|-n] [-o var] DEVICE", "Print list of BtrFS subvolumes on " "DEVICE.", options)
+  cmd_get_default_subvol = EXTCOMMAND_LIST_MARKER("btrfs-get-default-subvol", grub_cmd_btrfs_get_default_subvol, 0, "[-p|-n] [-o var] DEVICE", "Print default BtrFS subvolume on " "DEVICE.", options)
